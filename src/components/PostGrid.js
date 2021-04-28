@@ -1,4 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import {
+	Grid
+} from "@material-ui/core";
 
 // reactstrap components
 import {
@@ -18,20 +21,26 @@ export default function PostGrid(props) {
 
 	return (
 		<>
-			<Container className="os-post-grid">
-				<Row>
-					{
-						posts.map(post =>
-							/*<Col sm={12} md={4} key={post.id}>
-								<PostCard postData={post}/>
-							</Col>*/
-							<Col key={post.id} className="m-2">
-								<PostCard key={post.id} postData={post}/>
-							</Col>
-						)
-					}
-				</Row>
-			</Container>
+			<Grid container spacing={2} className="os-ox-hide">
+				<Grid item xs={12} >
+					<Grid
+						container
+						justify="center"
+						spacing={2}
+					>
+						{
+							posts.map(post =>
+								<Grid
+									item
+									key={post.id}
+								>
+									<PostCard key={post.id} postData={post}/>
+								</Grid>
+							)
+						}
+					</Grid>
+				</Grid>
+			</Grid>
 		</>
 	);
 }

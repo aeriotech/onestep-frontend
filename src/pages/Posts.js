@@ -45,7 +45,7 @@ export default function Posts() {
 
 	return (
 		<>
-			<div className="os-bg-sec">
+			<div className="os-bg-sec os-mh os-ox-hide">
 				<div className="position-relative">
 					<section className="d-flex align-items-center justify-content-center section-sm justify-content-center text-center">
 						<h1 className="text-white"> Objave </h1>
