@@ -59,7 +59,15 @@ export function PostCard(props) {
                 className="os-post-card-image"
             />
             <div className="d-flex flex-column align-items-center justify-content-center os-post-card-content">
-                <h3 className="text-white"> { post.title } </h3>
+                <h3 className="text-white">
+                    {
+                        post.title ?
+                            post.title.length > 24 ?
+                                post.title.substring(0, 21) + '...' : post.title
+                            :
+                            'No title'
+                    }
+                </h3>
                 <p className="text-white"> { post.content ?  post.content.substring(0, 95)  + '...' : 'No content' } </p>
             </div>
 

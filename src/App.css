@@ -77,6 +77,11 @@
     font-size: 48px;
 }
 
+.os-landing-section-title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
 .os-footer {
     color: var(--white);
     background-color: var(--primCol);
@@ -135,6 +140,7 @@
 .os-post-card-content {
     height: 125px;
     width: 430px;
+    padding-top: 10px;
     background-color: var(--primCol);
     position: absolute;
     bottom: 0;
@@ -175,6 +181,24 @@
 }
 
 /* Responsiveness settings */
+
+@media (max-width: 445px) {
+    .os-post-card {
+        width: 350px;
+        height: 200px;
+    }
+
+    .os-post-card-image {
+        width: 350px;
+        height: 200px;
+    }
+
+    .os-post-card-content {
+        padding-top: 15px;
+        height: 130px;
+        width: 350px;
+    }
+}
 
 @media (max-width: 555px) {
     .os-login-card {

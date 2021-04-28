@@ -50,9 +50,9 @@ export default function Posts() {
 					<section className="d-flex align-items-center justify-content-center section-sm justify-content-center text-center">
 						<h1 className="text-white"> Objave </h1>
 					</section>
-					<section className="section-sm">
+					<section className="section-sm d-flex align-items-center justify-content-center">
 						{
-							posts ?
+							posts.length >= 1 ?
 								<PostGrid postsData={posts} />
 								:
 								<h1 className="text-white"> Objav trenutno še ni </h1>
