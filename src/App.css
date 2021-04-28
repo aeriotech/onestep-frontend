@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+    --primCol: #0F1A20;
+    --secCol: #333746;
+    --black: #000000;
+    --accent: #EDCDCE;
+    --white: #FFFFFF;
+    --acc2: #848897;
+    --osDefaultFont: "Montserrat", "sans-serif";
+}
+
+* {
+    font-family: var(--osDefaultFont);
+}
+
+.os-bg-prim {
+    background-color: var(--primCol);
+}
+
+.os-bg-sec {
+    background-color: var(--secCol);
+}
+
+.os-bg-bl {
+    background-color: var(--black);
+}
+
+.os-bg-acc {
+    background-color: var(--accent);
+}
+
+.os-bg-wh {
+    background-color: var(--white);
+}
+
+.os-prim {
+    color: var(--primCol);
+}
+
+.os-sec {
+    color: var(--secCol);
+}
+
+.os-bl {
+    color: var(--black);
+}
+
+.os-acc {
+    color: var(--accent);
+}
+
+.os-wh {
+    color: var(--white);
+}
+
+.os-landing-section {
+    height: 85vh;
+}
+
+.os-landing-title {
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.os-landing-subtitle {
+    font-size: 48px;
+}
+
+.os-footer {
+    color: var(--white);
+    background-color: var(--primCol);
+    padding: 1.5rem;
+}
+
+.os-nav-item {
+    font-weight: bold;
+    color: var(--white);
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+.os-login-title {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.os-login-card {
+    border-radius: 60px;
+    background-color: var(--primCol);
+    height: 50vh;
+    width: 60vh;
+    box-shadow: 0 4px 4px black;
+}
+
+.os-login-button {
+    background-color: #6C88E0;
+    width: 30vh;
+}
+
+.os-post-card {
+    border-radius: 15px;
+    background-color: var(--primCol);
+    width: 430px;
+    height: 250px;
+    box-shadow: 0 4px 4px black;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: top ease 0.3s;
+}
+
+.os-post-card:hover {
+    transition: top ease 0.3s;
+    top: -1px;
+}
+
+.os-post-card-image {
+    border-radius: 18px;
+    object-fit: cover;
+    width: 430px;
+    height: 250px;
+    z-index: 1;
+}
+
+.os-post-card-content {
+    height: 125px;
+    width: 430px;
+    background-color: var(--primCol);
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+    opacity: 0.97;
+}
+
+.os-post-grid {
+    width: 100vw;
+}
+
+.os-tag-card {
+    border-radius: 10px;
+    background-color: var(--primCol);
+    width: 430px;
+    height: 60px;
+    box-shadow: 0 4px 4px black;
+}
+
+.os-post-image {
+    border-radius: 15px;
+    box-shadow: 0 4px 4px black;
+    width: 430px;
+    object-fit: cover;
+    height: 250px;
+}
+
+.os-post-content {
+    text-align: justify;
+}
+
+.disable-select {
+    -ms-user-select:none;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+}
+
+/* Responsiveness settings */
+
+@media (max-width: 555px) {
+    .os-login-card {
+        margin: 15px;
+    }
+}
+
+/* Scrollbar settings */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secCol);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
