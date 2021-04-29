@@ -20,6 +20,7 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-social-icons": "^5.1.1",
     "react-tsparticles": "^1.26.4",
     "react-youtube": "^7.13.1",
     "reactstrap": "^8.8.1",

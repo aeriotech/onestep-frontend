@@ -8,6 +8,7 @@ import discord_logo from '../assets/img/icons/Discord-Logo-White.svg'
 import { API_URL as url } from '../api/config.json';
 import {getAbout} from "../api/api.onestep";
 import {Divider} from "@material-ui/core";
+import { SocialIcon } from 'react-social-icons';
 
 export function LoginCard() {
     return (
@@ -66,6 +67,13 @@ export function AboutCard() {
             <p className="text-white os-about-content">
                 { about }
             </p>
+
+            <div className="os-about-icons">
+                {/*<SocialIcon url="https://onestep.si/discord" network="discord" bgColor="#0F1A20" fgColor="white"/>*/}
+                <SocialIcon url="https://twitter.com/OneStepSlo" bgColor="transparent" fgColor="white" />
+                <SocialIcon url="https://www.youtube.com/channel/UCRzKm_Hh4zGgLql5Cz_9T_A" bgColor="transparent" fgColor="white" />
+                <SocialIcon url="https://www.instagram.com/onestep.si/" bgColor="transparent" fgColor="white" />
+            </div>
         </div>
     );
 }
