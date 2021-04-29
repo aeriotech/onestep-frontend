@@ -86,7 +86,7 @@ export default function OSNav() {
                             </NavItem>
 
                             <NavItem>
-                                <a href="http://bans.onestep.si/" target="_blank" className="os-nav-item">
+                                <a href="https://bans.onestep.si/" target="_blank" rel="noreferrer" className="os-nav-item">
                                     BANS
                                 </a>
                             </NavItem>

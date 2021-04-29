@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// reactstrap components
-import {
-	Container,
-	Row,
-} from 'reactstrap';
 import PostGrid from "../components/PostGrid";
 import {getPosts} from "../api/api.onestep";
 

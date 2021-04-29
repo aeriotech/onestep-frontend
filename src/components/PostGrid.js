@@ -3,12 +3,6 @@ import {
 	Grid
 } from "@material-ui/core";
 
-// reactstrap components
-import {
-	Container,
-	Row,
-	Col
-} from 'reactstrap';
 import { PostCard } from "./Cards";
 
 export default function PostGrid(props) {

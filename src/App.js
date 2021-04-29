@@ -13,7 +13,8 @@ import Footer from "./components/Footer";
 import Authing from './components/Auth';
 import Posts from './pages/Posts';
 import Profile from './pages/Profile';
-import Post from './pages/Post'
+import Post from './pages/Post';
+import About from './pages/About';
 
 export default function App() {
     return (
@@ -48,6 +49,10 @@ export default function App() {
             <Route
                 path='/component-test'
                 component={ Posts }
+            />
+            <Route
+                path='/about'
+                component={ About }
             />
 
             <Footer />

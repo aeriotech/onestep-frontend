@@ -12,3 +12,7 @@ export async function getPosts() {
 export async function getPost(post_slug) {
     return axios.get(url + `/posts/${post_slug}`);
 }
+
+export async function getAbout() {
+    return axios.get(url + '/about-us');
+}

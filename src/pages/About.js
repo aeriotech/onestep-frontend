@@ -2,31 +2,28 @@ import React from 'react';
 
 // reactstrap components
 import {
-	Container
+	Container,
+	Row,
 } from 'reactstrap';
 
-export default function Landing() {
+import { AboutCard } from "../components/Cards";
 
+
+export default function About() {
 	return (
-		<div>
-			<main className="os-bg-sec">
+		<>
+			<div className="os-bg-sec os-mh">
 				<div className="position-relative">
-					<section className="os-landing-section d-flex flex-column align-items-center justify-content-center disable-select">
-						<Container className="d-flex flex-column align-items-center">
-							<h1 className="os-landing-title text-white">
-								OneStep
-							</h1>
-							<h2 className="os-landing-subtitle text-white">
-								Vedno en korak pred vsemi
-							</h2>
+					<section className="d-flex flex-column align-items-center justify-content-center section section-lg">
+						<Container>
+							<Row className="d-flex flex-column align-items-center justify-content-center text-center mb-lg">
+								<br/>
+								<AboutCard />
+							</Row>
 						</Container>
 					</section>
-
-					<section>
-
-					</section>
 				</div>
-			</main>
-		</div>
+			</div>
+		</>
 	);
 }

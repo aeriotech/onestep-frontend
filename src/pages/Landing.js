@@ -3,7 +3,6 @@ import React/*, {Component}*/, {useEffect, useState} from 'react';
 // reactstrap components
 import {
   Container,
-  Row,
 } from 'reactstrap';
 import {getPosts} from "../api/api.onestep";
 import PostGrid from "../components/PostGrid";

@@ -17,11 +17,15 @@
 }
 
 .os-mh {
-    min-height: 85vh;
+    min-height: 86vh;
 }
 
 .os-ox-hide {
     overflow-x: hidden;
+}
+
+.os-oy-hide {
+    overflow-y: hidden;
 }
 
 .os-bg-prim {
@@ -169,6 +173,11 @@
 }
 
 .os-post-content {
+    text-align: justify;
+}
+
+.os-about-content {
+    margin: 15px;
     text-align: justify;
 }
 

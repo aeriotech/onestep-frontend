@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 import {
-    Button,
-    Badge
+    Button
 } from 'reactstrap';
 
 import discord_logo from '../assets/img/icons/Discord-Logo-White.svg'
 import { API_URL as url } from '../api/config.json';
+import {getAbout} from "../api/api.onestep";
+import {Divider} from "@material-ui/core";
 
 export function LoginCard() {
     return (
@@ -30,6 +31,41 @@ export function LoginCard() {
                     LOGIN WITH DISCORD
                 </Button>
             </div>
+        </div>
+    );
+}
+
+export function AboutCard() {
+
+    const [about, setAbout] = useState();
+
+    useEffect(() => {
+        async function fetchAbout() {
+            const res = await getAbout();
+
+            try {
+                const content = res.data;
+
+                setAbout(content.content);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        fetchAbout().then(r => console.log(r));
+    }, [])
+
+    useEffect(() => console.log(about), [about]);
+
+    return (
+        <div className="os-login-card d-flex flex-column justify-content-center align-content-center align-items-center">
+            <h1 className="os-login-title">
+                O nas
+            </h1>
+
+            <p className="text-white os-about-content">
+                { about }
+            </p>
         </div>
     );
 }
